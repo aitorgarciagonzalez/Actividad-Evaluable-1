@@ -1,0 +1,79 @@
+1. Objetivo del flujo Git
+Objetivo: Definir una forma ordenada y profesional de trabajar con Git para evitar conflictos, facilitar la colaboración y mantener un historial limpio y entendible.
+
+2. Rama principal y ramas de trabajo
+- Rama principal: main
+- Uso: contiene el código estable, probado y listo para producción o demo.
+- Solo se actualiza mediante Pull Requests revisados y aprobados.
+- Ramas de funcionalidad (feature)
+- Nombre:
+- feature/login-basic
+- feature/user-model
+- feature/kanban-setup
+- Uso: desarrollo de nuevas funcionalidades.
+- Ramas de corrección (fix)
+- Nombre:
+- fix/login-validation
+- fix/user-model-bug
+- Uso: corregir errores detectados en main o en una feature.
+- Ramas de documentación (docs)
+- Nombre:
+- docs/readme-inicial
+- docs/git-flow-rules
+- Uso: cambios en documentación, sin modificar lógica de código.
+
+3. Reglas de trabajo con ramas
+- Regla 1: Nunca se trabaja directamente en main.
+- Regla 2: Cada tarea o issue debe tener su propia rama.
+- Regla 3: El nombre de la rama debe ser corto, descriptivo y en inglés.
+- Regla 4: Antes de empezar una rama nueva, actualizar main local:
+- git checkout main
+- git pull origin main
+- Regla 5: Crear la rama desde main:
+- git checkout -b feature/login-basic
+- Regla 6: Al terminar la tarea, hacer push y abrir un Pull Request.
+- Regla 7: Al menos un compañero debe revisar y aprobar el PR antes del merge.
+
+4. Normas para mensajes de commit
+- Formato recomendado:
+- tipo: descripción breve en inglés
+- Tipos habituales:
+- feat: nueva funcionalidad
+- fix: corrección de error
+- docs: cambios de documentación
+- refactor: cambios internos sin cambiar funcionalidad
+- chore: tareas de mantenimiento (configuración, scripts, etc.)
+- Buenas prácticas:
+- Mensajes claros y específicos.
+- Usar verbos en presente: “add”, “fix”, “update”…
+- Un commit debe representar un cambio coherente (no mezclar muchas cosas).
+
+5. Ejemplos de mensajes de commit
+- Funcionalidad:
+- feat: add basic login form
+- feat: create user model and repository
+- feat: connect login form with user storage
+- Correcciones:
+- fix: validate empty email in login
+- fix: correct user table field name
+- Documentación:
+- docs: add project setup instructions
+- docs: describe git workflow and branch rules
+- Refactor / mantenimiento:
+- refactor: extract auth logic to service
+- chore: configure eslint and prettier
+
+6. Flujo resumido por tarea
+- Actualizar main:
+- git checkout main
+- git pull origin main
+- Crear rama de tarea:
+- git checkout -b feature/login-basic
+- Trabajar y hacer commits pequeños y claros.
+- Subir la rama:
+- git push -u origin feature/login-basic
+- Abrir Pull Request hacia main.
+- Revisión por un compañero, comentarios y aprobación.
+- Merge a main y cierre de la issue.
+
+
