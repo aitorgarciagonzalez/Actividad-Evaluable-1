@@ -1,7 +1,7 @@
 1. Objetivo del flujo Git
 Objetivo: Definir una forma ordenada y profesional de trabajar con Git para evitar conflictos, facilitar la colaboración y mantener un historial limpio y entendible.
 
-2. Rama principal y ramas de trabajo
+2. Rama principal  y ramas de trabajo
 - Rama principal: main
 - Uso: contiene el código estable, probado y listo para producción o demo.
 - Solo se actualiza mediante Pull Requests revisados y aprobados.
