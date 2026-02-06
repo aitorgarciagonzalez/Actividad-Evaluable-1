@@ -3,5 +3,5 @@ Este repositorio contiene el desarrollo inicial de un prototipo siguiendo metodo
 <br>
 <br>
 <br>
-•	Scrum Master: Aitor Garcia <br>•    Product Owner: Tomas Noguera<br>•	Equipo de desarrollo: Denis tutulan, Javier Osado.
+•	Scrum Master: Aitor Garcia <br>•    Product Owner: Tomas Noguera<br>•	Equipo de desarrollo: Denis tutulan, Javier Osado. 
  
